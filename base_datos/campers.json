@@ -1,13 +1,14 @@
 [
   {
-    "nombre": "a",
-    "apellido": "a",
+    "nombre": "Alejandro",
+    "apellido": "Silgado",
     "identificacion": 123,
     "direccion": "a",
     "acudiente": "a",
     "telefono_celular": "a",
     "telefono_fijo": "a",
     "estado": "a",
-    "nota_final": 99.0
+    "nota_final": 99.0,
+    "ruta_camper": "Ruta Java"
   }
 ]

@@ -16,6 +16,16 @@ def menu_campers():
     print("1. Crear campers")
     print("2. Listar campers")
     print("3. Ingresar notas campers")
+    print("4. Definir ruta campers")
+    print("6. Salir")
+    op=verificar_opcion("Opcion: ",1,6)
+    return op
+
+def menu_ruta():
+    print("----------- Menú De Seleccion De Ruta Campers-----------")
+    print("1. Ruta NodeJS")
+    print("2. Ruta Java")
+    print("3. Ruta NetCore")
     print("4. Salir")
     op=verificar_opcion("Opcion: ",1,4)
     return op

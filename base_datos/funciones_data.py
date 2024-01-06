@@ -1,7 +1,7 @@
 import json
 import os
-
-
+from menus.menus import *
+#Funciones json
 def guardar_campers_json():
     try:
         with open(os.path.join("base_datos", "campers.json"), 'r') as archivo_json:
@@ -13,13 +13,14 @@ def guardar_campers_json():
 
 def guardar_json():
     try:
-        with open(os.path.join("base_datos", "campers.json"), 'w') as archivo_json:
+        with open(os.path.join("base_datos", "campers.json"), 'w') as archivo_json: 
             json.dump(lista_campers, archivo_json, indent=2)
         print("La lista de campers ha sido guardada")
     except Exception as e:
         print(f"Error al guardar el archivo: {e}")
 
 lista_campers = guardar_campers_json()
+#Funciones de menu camperss  
 
 def registrar_campers():
     nombres = input("Ingrese el nombre del camper: ")
@@ -51,6 +52,7 @@ def listar_campers():
     print("Listado de campers: ")
     for camper in lista_campers:
         print(camper)
+
 def registro_resultado():
     identificacion_a_validar = int(input("Ingrese la identificacion del camper: "))
     
@@ -77,6 +79,32 @@ def registro_resultado():
             guardar_json()
         else:
             print("Error: Las notas deben ser mayores a 0")
+    else:
+        print("El estudiante no se encuentra en la base de datos. Intente de nuevo.")
+
+
+def definicion_ruta():
+    identificacion_a_validar = int(input("Ingrese la identificacion del camper: "))
+    camper_encontrado = None
+
+    for camper in lista_campers:
+        if camper['identificacion'] == identificacion_a_validar:
+            camper_encontrado = camper
+            break
+    if camper_encontrado is not None:
+        op = menu_ruta()
+        if op == 1:
+            camper_encontrado['ruta_camper'] = "Ruta NodeJS"
+            print(f"El estudiante {camper_encontrado['nombre']} {camper_encontrado['apellido']} fue asignado en la Ruta NodeJS")
+        elif op == 2:
+            camper_encontrado['ruta_camper'] = "Ruta Java"
+            print(f"El estudiante {camper_encontrado['nombre']} {camper_encontrado['apellido']} fue asignado en la Ruta Java")
+        elif op == 3:
+            camper_encontrado['ruta_camper'] = "Ruta NetCore"
+            print(f"El estudiante {camper_encontrado['nombre']} {camper_encontrado['apellido']} fue asignado en la Ruta NetCore")
+        else:
+            print("Elija un número entre (1-3)")
+        guardar_json()
     else:
         print("El estudiante no se encuentra en la base de datos. Intente de nuevo.")
 

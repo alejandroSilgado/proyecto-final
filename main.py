@@ -2,6 +2,7 @@ from base_datos.funciones_data import *
 from utilidades.funciones import *
 from menus.menus import *
 #Arranque del menu campers 
+
 def campers():      
     limpiar_pantalla()
     op=menu_campers()
@@ -14,14 +15,22 @@ def campers():
     if op == 3:
         registro_resultado()
         input("Clic cualquier teclas [continuar]: ")
+    if op == 4:
+        definicion_ruta()
+        input("Clic cualquier teclas [continuar]: ")
+
 #Arranque del menu trainers 
 
 def trainers():
     limpiar_pantalla()    
     op=menu_trainers()
+#Arranque del menu matriculas 
+
 def matriculas():
     limpiar_pantalla()    
     op=menu_matriculas()
+#Arranque del menu aulas 
+
 def aulas():
     limpiar_pantalla()    
     op=menu_aulas()
