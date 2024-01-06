@@ -74,7 +74,7 @@ def registro_resultado():
             porcentaje_10 = float(nota_trabajo_clase * 0.1)
             resultado = float(porcentaje_60 + porcentaje_40 + porcentaje_10)
 
-            camper_encontrado['nota_final'] = resultado  
+            camper_encontrado['prueba_incial'] = resultado  
             print(f"Resultado registrado para el estudiante {camper_encontrado['nombre']} {camper_encontrado['apellido']}.")
             guardar_json()
         else:
@@ -88,6 +88,7 @@ def definicion_ruta():
     camper_encontrado = None
 
     for camper in lista_campers:
+        if camper_encontrado['prueba_incial'] >= 60
         if camper['identificacion'] == identificacion_a_validar:
             camper_encontrado = camper
             break

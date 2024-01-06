@@ -2,7 +2,6 @@ from base_datos.funciones_data import *
 from utilidades.funciones import *
 from menus.menus import *
 #Arranque del menu campers 
-
 def campers():      
     limpiar_pantalla()
     op=menu_campers()
