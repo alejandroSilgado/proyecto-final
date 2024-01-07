@@ -3,6 +3,9 @@ lista_rutas = guardar_rutas_json()
 #Funciones de menu camperss  
 
 def registrar_campers():
+    limpiar_pantalla()
+    print("Sistema de resgitro campers")
+
     nombres = input("Ingrese el nombre del camper: ")
     apellidos = input("Ingrese el apellido del camper: ")
     identificacion = int(input("Ingrese el documento del camper: "))
@@ -28,11 +31,15 @@ def registrar_campers():
     return camper
 
 def listar_campers():
+    limpiar_pantalla()
     print("Listado de campers: ")
     for camper in lista_campers:
         print(camper)
 
 def registro_resultado():
+    limpiar_pantalla()
+    print("Sistema de notas campers")
+
     identificacion_a_validar = int(input("Ingrese la identificacion del camper: "))
     
     camper_encontrado = None
@@ -69,6 +76,8 @@ def registro_resultado():
 
 
 def definicion_ruta():
+    limpiar_pantalla()
+    print("Sistema de rutas campers")
     identificacion_a_validar = int(input("Ingrese la identificacion del camper: "))
     camper_encontrado = None
 
@@ -79,6 +88,7 @@ def definicion_ruta():
 
     if camper_encontrado is not None:
         if camper_encontrado['prueba_inicial'] >= 60:
+            limpiar_pantalla()
             op = menu_ruta()
             if op == 1:
                 camper_encontrado['ruta_camper'] = "Ruta NodeJS"
@@ -98,6 +108,7 @@ def definicion_ruta():
         print("El estudiante no se encuentra en la base de datos. Intente de nuevo.")
 
 def modificar_camper():
+    print("Sistema de modificacion campers")
     limpiar_pantalla()
     identificacion_a_modificar = int(input("Ingrese la identificación del camper que desea modificar: "))
     camper_encontrado = None
