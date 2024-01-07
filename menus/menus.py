@@ -3,12 +3,13 @@ from utilidades.funciones import *
 def menu_principal():
     print("----------- Menú Principal-----------")
     print("1. Campers")
-    print("2. Trainers")
-    print("3. Matriculas")
-    print("4. Aulas")
+    print("2. Rutas")
+    print("3. Aulas")
+    print("4. Matriculas")
     print("5. Reportes")
-    print("6. Salir")       
-    op=verificar_opcion("Opcion: ",1,6)
+    print("6. Trainers") 
+    print("7. Salir")      
+    op=verificar_opcion("Opcion: ",1,7)
     return op
 
 def menu_campers():
@@ -17,10 +18,18 @@ def menu_campers():
     print("2. Listar campers")
     print("3. Ingresar notas campers")
     print("4. Definir ruta campers")
+    print("5. Modificar campers")
     print("6. Salir")
     op=verificar_opcion("Opcion: ",1,6)
     return op
-
+def menu_rutas():
+    print("----------- Menú Rutas -----------")
+    print("1. Creación de rutas de entrenamiento")
+    print("2. Listar ruta de entrenamiento")
+    print("3. Borrar ruta de entrenamiento")
+    print("4. Salir")
+    op=verificar_opcion("Opcion: ",1,4)
+    return op
 def menu_ruta():
     print("----------- Menú De Seleccion De Ruta Campers-----------")
     print("1. Ruta NodeJS")
@@ -51,10 +60,11 @@ def menu_matriculas():
 def menu_aulas():
     print("----------- Menú Aulas-----------")
     print("1. Crear Aulas")
-    print("2. Buscar Aulas")
-    print("3. Modificar Aulas")
-    print("4. Salir")
-    op=verificar_opcion("Opcion: ",1,4)
+    print("2. Agregar campers a aulas")
+    print("3. Listar Aulas activas")
+    print("4. Modificar Aulas")
+    print("5. Salir")
+    op=verificar_opcion("Opcion: ",1,5)
     return op
 
 def menu_reportes():
@@ -65,3 +75,5 @@ def menu_reportes():
     print("4. Salir")
     op=verificar_opcion("Opcion: ",1,4)
     return op
+
+

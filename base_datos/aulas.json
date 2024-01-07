@@ -1,0 +1,19 @@
+[
+  {
+    "nombre_area": "Apolo",
+    "capacidad_maxima": 33,
+    "campers_inscritos": []
+  },
+  {
+    "nombre_area": "Artemis",
+    "capacidad_maxima": 33,
+    "campers_inscritos": [
+      123
+    ]
+  },
+  {
+    "nombre_area": "Sputnik",
+    "capacidad_maxima": 33,
+    "campers_inscritos": []
+  }
+]

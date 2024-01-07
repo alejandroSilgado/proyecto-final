@@ -1,4 +1,5 @@
 import os 
+import json
 
 def limpiar_pantalla():
     os.system('clear' if os.name == 'posix' else 'cls')    
@@ -13,3 +14,5 @@ def verificar_opcion(enunciando,inferior,superior):
                 print(f"Opción no está entre el intervalo de ({inferior}-{superior})")
         except ValueError:
             print("Por favor, introduce un número válido. ")
+
+

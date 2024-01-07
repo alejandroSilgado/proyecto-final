@@ -1,0 +1,15 @@
+[
+  {
+    "nombre_ruta": "ruta alejandro ",
+    "sgdb_principal": "a",
+    "sgdb_alternativo": "a",
+    "materias": [
+      "Fundamentos de programaci\u00f3n",
+      "Programaci\u00f3n Web",
+      "Programaci\u00f3n formal",
+      "Bases de datos",
+      "Backend"
+    ],
+    "campers_inscritos": []
+  }
+]
