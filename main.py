@@ -17,6 +17,9 @@ def campers():
     if op == 4:
         definicion_ruta()
         input("Clic cualquier teclas [continuar]: ")
+    if op == 5:
+        modificar_camper()
+        input("Clic cualquier teclas [continuar]: ")
 
 #Arranque del menu trainers 
 

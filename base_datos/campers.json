@@ -7,8 +7,9 @@
     "acudiente": "a",
     "telefono_celular": "a",
     "telefono_fijo": "a",
-    "estado": "a",
+    "estado": "Aprobado",
     "nota_final": 99.0,
-    "ruta_camper": "Ruta Java"
+    "ruta_camper": "Ruta Java",
+    "prueba_incial": 66.0
   }
 ]
