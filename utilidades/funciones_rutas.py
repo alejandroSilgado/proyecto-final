@@ -1,5 +1,4 @@
 from base_datos.funciones_data import *
-lista_rutas = guardar_rutas_json()
 #FUNCIONES AREAS
 def agregar_camper_a_area():
     limpiar_pantalla()
@@ -108,8 +107,6 @@ def modificar_area():
         print(f"Aula modificada con éxito para el área '{nombre_area}'.")
     else:
         print(f"No se encontró el área de entrenamiento '{nombre_area}'. Intente de nuevo.")
-
-   
 
 # FUNCIONES RUTAS
 

@@ -5,9 +5,9 @@ def menu_principal():
     print("1. Campers")
     print("2. Rutas")
     print("3. Aulas")
-    print("4. Matriculas")
-    print("5. Reportes")
-    print("6. Trainers") 
+    print("4. Trainers")
+    print("5. Matriculas")
+    print("6. Reportes") 
     print("7. Salir")      
     op=verificar_opcion("Opcion: ",1,7)
     return op
@@ -16,12 +16,14 @@ def menu_campers():
     print("----------- Menú Campers-----------")
     print("1. Crear campers")
     print("2. Listar campers")
-    print("3. Ingresar notas campers")
-    print("4. Definir ruta campers")
-    print("5. Modificar campers")
-    print("6. Salir")
-    op=verificar_opcion("Opcion: ",1,6)
+    print("3. Ingresar nota de los modulos")
+    print("4. Ingresar nota de la prueba inicial")
+    print("5. Definir ruta campers")
+    print("6. Modificar campers")
+    print("7. Salir")
+    op=verificar_opcion("Opcion: ",1,7)
     return op
+
 def menu_rutas():
     print("----------- Menú Rutas -----------")
     print("1. Creación de rutas de entrenamiento")
@@ -30,8 +32,10 @@ def menu_rutas():
     print("4. Salir")
     op=verificar_opcion("Opcion: ",1,4)
     return op
+
 def menu_ruta():
-    print("----------- Menú De Seleccion De Ruta Campers-----------")
+    limpiar_pantalla()
+    print("----------- Menú De Seleccion De Ruta -----------")
     print("1. Ruta NodeJS")
     print("2. Ruta Java")
     print("3. Ruta NetCore")
@@ -41,18 +45,22 @@ def menu_ruta():
 
 def menu_trainers():
     print("----------- Menú Trainers-----------")
-    print("1. Crear trainer")
-    print("2. Buscar trainer")
-    print("3. Modificar trainer")
-    print("4. Salir")
-    op=verificar_opcion("Opcion: ",1,4)
+    print("1. Crear trainers")
+    print("2. Buscar trainers")
+    print("3. Modificar trainers")
+    print("4. Listar trainers")
+    print("5. Agregar trainer a una ruta")
+    print("6. Agregar trainer a una area")
+    print("7. Salir")
+
+    op=verificar_opcion("Opcion: ",1,7)
     return op
 
 def menu_matriculas():
     print("----------- Menú Matriculas-----------")
     print("1. Crear Matriculas")
-    print("2. Buscar Matriculas")
-    print("3. Modificar Matriuclas")
+    print("2. Listar Matriculas")
+    print("3. Modificar Matriculas")
     print("4. Salir")
     op=verificar_opcion("Opcion: ",1,4)
     return op
@@ -69,11 +77,13 @@ def menu_aulas():
 
 def menu_reportes():
     print("----------- Menú Reportes-----------")
-    print("1. Listar campers estado inscripto")
-    print("2. Listar campers aprobaron examen")
-    print("3. Listar trainers trabajando en campus")
-    print("4. Salir")
-    op=verificar_opcion("Opcion: ",1,4)
+    print("1. Listar los campers inscritos")
+    print("2. Listar los campers que aprobaron el examen inicial")
+    print("3. Listar los entrenadores trabajando")
+    print("4. Mostrar cuantos campers perdieron y aprobaron cada uno de los modulos")
+    print("5. Salir")
+
+    op=verificar_opcion("Opcion: ",1,5)
     return op
 
 

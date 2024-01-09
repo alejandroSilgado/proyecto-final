@@ -1,0 +1,10 @@
+[
+  {
+    "identificacion_camper": 123,
+    "nombre_camper": "Alejandro Silgado",
+    "fecha_inicio": "2023-11-27",
+    "fecha_finalizacion": "2024-11-27",
+    "aula_entrenamiento": "Apolo",
+    "experto_encargado": "Camilo"
+  }
+]

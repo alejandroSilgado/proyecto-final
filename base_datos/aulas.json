@@ -2,7 +2,8 @@
   {
     "nombre_area": "Apolo",
     "capacidad_maxima": 33,
-    "campers_inscritos": []
+    "campers_inscritos": [],
+    "director_aula": "Camilo"
   },
   {
     "nombre_area": "Artemis",

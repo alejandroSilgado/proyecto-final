@@ -1,0 +1,13 @@
+[
+  {
+    "nombre": "Camilo",
+    "apellido": "Navas",
+    "especialidad": "Java",
+    "horario_disponible": "Tarde",
+    "rutas_asignadas": [
+      "Ruta NetCore",
+      "Ruta Java"
+    ],
+    "aula_asignada": "Apolo"
+  }
+]

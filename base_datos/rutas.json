@@ -1,8 +1,34 @@
 [
   {
-    "nombre_ruta": "ruta alejandro ",
+    "nombre_ruta": "Ruta NodeJS ",
     "sgdb_principal": "a",
     "sgdb_alternativo": "a",
+    "materias": [
+      "Fundamentos de programaci\u00f3n",
+      "Programaci\u00f3n Web",
+      "Programaci\u00f3n formal",
+      "Bases de datos",
+      "Backend"
+    ],
+    "campers_inscritos": []
+  },
+  {
+    "nombre_ruta": "Ruta Java",
+    "sgdb_principal": "",
+    "sgdb_alternativo": "",
+    "materias": [
+      "Fundamentos de programaci\u00f3n",
+      "Programaci\u00f3n Web",
+      "Programaci\u00f3n formal",
+      "Bases de datos",
+      "Backend"
+    ],
+    "campers_inscritos": []
+  },
+  {
+    "nombre_ruta": "Ruta NetCore",
+    "sgdb_principal": "",
+    "sgdb_alternativo": "",
     "materias": [
       "Fundamentos de programaci\u00f3n",
       "Programaci\u00f3n Web",

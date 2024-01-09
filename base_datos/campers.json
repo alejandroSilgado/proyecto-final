@@ -8,7 +8,12 @@
     "telefono_celular": "a",
     "telefono_fijo": "a",
     "estado": "Aprobado",
-    "ruta_camper": "Ruta NetCore",
-    "prueba_inicial": 99.0
+    "ruta_camper": "Ruta Java",
+    "prueba_inicial": 97,
+    "nota_modulos": 99.0,
+    "nota_trabajo_clase": 60,
+    "nota_evaluacion_filtro": 90,
+    "nota_trabajo_practico": 90,
+    "perdio_modulo": true
   }
 ]
