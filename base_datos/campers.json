@@ -15,5 +15,15 @@
     "nota_evaluacion_filtro": 90,
     "nota_trabajo_practico": 90,
     "perdio_modulo": true
+  },
+  {
+    "nombre": "Angie ",
+    "apellido": "Ardila",
+    "identificacion": 123456,
+    "direccion": "floridablanca",
+    "acudiente": "andres",
+    "telefono_celular": "34565654564",
+    "telefono_fijo": "63449449",
+    "estado": "Inscrito"
   }
 ]
