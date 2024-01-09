@@ -2,13 +2,13 @@ from utilidades.funciones import *
 
 def menu_principal():
     print("----------- Menú Principal-----------")
-    print("1. Campers")
-    print("2. Rutas")
-    print("3. Aulas")
-    print("4. Trainers")
-    print("5. Matriculas")
-    print("6. Reportes") 
-    print("7. Salir")      
+    print("1. Configuracion Campers")
+    print("2. Configuracion Rutas")
+    print("3. Configuracion Aulas")
+    print("4. Configuracion Trainers")
+    print("5. Configuracion Matriculas")
+    print("6. Configuracion Reportes") 
+    print("7. Salir del programa")      
     op=verificar_opcion("Opcion: ",1,7)
     return op
 
